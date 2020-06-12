@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "447abc9e-3d30-41f8-8963-a601152f4aa2",
+		"name": "sosApi",
+		"description": "api para consultas de comprobantes de pago electronico CPE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "checkCDR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuarioSol\": \"VA6CORPO\",\r\n    \"claveSol\": \"vA6x5jy977\",\r\n    \"ruc\": \"20600227492\",\r\n    \"serie\": \"B001\",\r\n    \"correlativo\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
